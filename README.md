@@ -21,10 +21,11 @@ westwingnow.de interview task2
 ### 🏠 [Homepage](westwingnow.de)
 
 ************************************************************ **Dockerized** ***********************************************************************
-docker-compose build 
-
-docker-compose up 
-
+docker build -t westwingnow -f Dockerfile .
+docker run -it westwingnow
+docker run -p 4444:4444 selenium/standalone-chrome
+docker-compose build
+docker-compose up
 ***************************************************************************************************************************************************
 
 ## Install
